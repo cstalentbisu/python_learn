@@ -3,8 +3,11 @@
 #注意三角形三边的面积公式
 
 
-def is_angle(a,b,c): if a + b > c and a + c >b and b + c > a \ and a - b
-	< c and a - c < b and b - c < a: return True else: return False
+def is_angle(a,b,c): 
+	if a + b > c and a + c >b and b + c > a and a - b< c and a - c < b and b - c < a: 
+		return True 
+	else: 
+		return False
 
 def perm_angle(a,b,c):
 	if is_angle(a,b,c):
@@ -23,4 +26,4 @@ a = float(input('a = '))
 b = float(input('b = '))
 c = float(input('c = '))
 
-print('the perim is %.2d , the aera is %.2d'%(perm_angle(a,b,c),aera_angle(a,b,c)))
+print('the perim is %.2f , the aera is %.2f'%(perm_angle(a,b,c),aera_angle(a,b,c)))
