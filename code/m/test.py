@@ -1,5 +1,4 @@
-s1 = ' I am very happy '
-
-s1.strip(' \t')
-
-print(s1)
+head,*mid,tail = set(range(10))
+print(head)
+print(*mid)
+print(tail)
